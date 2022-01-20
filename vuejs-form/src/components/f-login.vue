@@ -29,18 +29,17 @@
       />
       <fError :errors="errors.passWord" />
     </div>
-    <div class="form-control">
-      <button>Login</button>
-    </div>
+    <f-button />
   </form>
 </template>
 
 <script>
 import fImage from "./f-image.vue";
 import fError from "./f-error.vue";
+import fButton from "./f-button.vue";
 
 export default {
-  components: { fImage, fError },
+  components: { fImage, fError, fButton },
   data() {
     return {
       errors: {
