@@ -92,9 +92,12 @@ export default {
       return /\d/.test(pass);
     },
     submitForm() {
-      if (this.validateUserName() && this.validatePassWord()) {
+      if (this.validatePassWord() && this.validateUserName()) {
         alert("login successfully!");
         this.user = "";
+      } else {
+        this.validateUserName();
+        this.validatePassWord();
       }
     },
   },
