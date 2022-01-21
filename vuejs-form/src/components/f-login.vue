@@ -94,7 +94,8 @@ export default {
     submitForm() {
       if (this.validatePassWord() && this.validateUserName()) {
         alert("login successfully!");
-        this.user = "";
+        this.user.userName = "";
+        this.user.passWord = "";
       } else {
         this.validateUserName();
         this.validatePassWord();
